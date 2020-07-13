@@ -1,1 +1,1 @@
-# Kafka-Chat
+# KafkaChat

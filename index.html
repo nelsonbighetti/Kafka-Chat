@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Kafka Chat</title>
+    <link rel="stylesheet" href="./css/window.css">
+    <link rel="stylesheet" href="./css/chat.css">
+</head>
+<body>
+<div id="title-bar">
+    <div id="title">Kafka Chat</div>
+    <div id="title-bar-btns">
+    <button id="min-btn">-</button>
+    <button id="max-btn">+</button>
+    <button id="close-btn">x</button>
+  </div>
+</div>
+
+<div id="login_form_wrapper">  
+  <input type="text" class="text_input" id="username" placeholder="Enter your name here">
+  <button class="btn" id="login_btn">Connect</button>
+</div>
+
+<div id="chat_wrapper">
+  <div id="chat_bubbles"></div>
+  <div id="text_input_wrapper">  
+    <input type="text" class="text_input" id="message" placeholder="Input your message here">
+    <button class="btn" id="send_btn">Send</button>
+  </div>
+</div>
+
+<script src="./scripts/render.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+
+
+#chat_wrapper{
+  visibility: hidden;
+  left: 50%;
+  margin-left: -300px;
+  margin-top: 50px;
+  height: 550px;
+  width: 600px;
+  display: block; 
+  position: absolute;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.5);
+  box-shadow: 10px 10px 50px rgba(0,0,0,0.2);
+}
+
+#login_form_wrapper{
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  height: 30px;
+  width: 550px;
+  left: 50%;
+  margin-top: 250px;
+  margin-left: -250px;
+  position: absolute;
+  display: block;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+}
+
+#text_input_wrapper{
+  box-shadow: 0px -2px 5px rgba(0,0,0,0.1);
+  position: absolute;
+  display: block;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  height: 30px;
+  width: 100%;
+  bottom: 0px;
+  background-color: white;
+}
+
+.text_input{
+  font-size: 15px;
+  margin-left: 15px;
+  width: 500px;
+  height: 20px;
+  margin-bottom: 0px;
+  position: absolute;
+  display: inline-block;
+  border: 0px;
+  bottom: 0px;
+  padding: 3px 5px;
+  background-color: white;
+}
+
+.text_input:focus{
+  border-bottom: 2px solid #a00037;
+}
+
+.btn{
+  font-size: 15px;
+  width: 85px;
+  height: 100%;
+  background-color: #7cb342;
+  position: absolute;
+  display: inline-block;
+  border-bottom-right-radius: 15px;
+  right: 0px;
+  bottom: 0px;
+  border: 0px;
+}
+
+.btn:hover{
+  background-color: #aee571;
+}
+
+.btn:active{
+  background-color: #4b830d;
+}
+
+#chat_bubbles {
+  height: 500px;
+  width: auto;
+  padding: 10px;
+  overflow: auto;
+}
+
+#chat_bubbles::-webkit-scrollbar { width: 0; }
+
+.talk-bubble {
+  margin-top: 30px;
+  display: block;
+  position: relative;
+  width: 300px;
+  height: auto;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.talk-bubble-left {
+  margin-left: 40px;
+  border-top-left-radius: 0px;
+  box-shadow: -10px 10px 30px rgba(0,0,0,0.1)
+}
+
+.talk-bubble-right {
+  border-top-right-radius: 0px;
+  margin-left: 238px;
+  right: 0px;
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.1)
+}
+
+.sender_bubble{
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+  position: absolute;
+  margin-top: -15px;
+  height: 20px;
+  padding: 5px;
+  max-width: 150px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.sender_bubble_left{  
+  margin-left: -10px;
+}
+
+.sender_bubble_right{  
+  margin-right: -10px;
+  right: 0px;
+}
+
+.border{
+  border: 8px solid #666;
+}
+
+/* talk bubble contents */
+.talktext{
+  padding: 1em;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+.talktext p{
+  /* remove webkit p margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  word-wrap: break-word;
+}
